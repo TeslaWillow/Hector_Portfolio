@@ -1,0 +1,26 @@
+header {
+    background: url('../assets/img/fotis-fotopoulos-LJ9KY8pIH3E-unsplash.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #1C181B;
+    background-position: bottom;
+    background-attachment: fixed;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 75%);
+    height: 300px;
+    z-index: 15;
+}
+
+main {
+    margin-top: -7rem;
+    margin-bottom: -7rem;
+    z-index: 10;
+}
+
+footer {
+    background-color: var(--folio-blue);
+    clip-path: polygon(0 0, 100% 15%, 100% 100%, 0 100%);
+    color: white;
+    padding-top: 150px;
+    padding-bottom: 50px;
+    z-index: 0;
+}

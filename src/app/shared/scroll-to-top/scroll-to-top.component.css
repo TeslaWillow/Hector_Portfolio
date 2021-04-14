@@ -1,0 +1,32 @@
+.scroll-to-top{
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    border-radius: 100%;
+    padding: 2px 0px;
+    font-weight: bolder;
+    z-index: 100;
+    background-color: var(--folio-blue);
+    color: #000;
+    opacity: 0;
+    transition: all .2s ease-in-out;
+}
+    
+
+.show-scrollTop{
+    opacity: 1;
+    transition: all .2s ease-in-out;
+}
+        
+
+.btn:focus{
+    box-shadow: none !important;
+}
+
+   
+@media screen and ( max-width:  992px ){
+    .scroll-to-top{
+        bottom: 20px;
+        right: 20px;
+    }
+}

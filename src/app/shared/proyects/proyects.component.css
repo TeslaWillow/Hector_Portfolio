@@ -1,0 +1,79 @@
+div.card_container:hover figure {
+    -webkit-transform: perspective(600px) rotateY(180deg);
+    -moz-transform:    perspective(600px) rotateY(180deg);
+    -o-transform:      perspective(600px) rotateY(180deg);
+    transform:         perspective(600px) rotateY(180deg);
+    -webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.25);
+    -moz-box-shadow:    0px 0px 10px 0px rgba(0,0,0,0.25);
+    box-shadow:         0px 0px 10px 0px rgba(0,0,0,0.25);
+}
+
+figure {
+    width: 100%;
+    margin: 0;
+    position: relative;
+    transition: all ease .5s;
+    cursor: pointer;
+    transform-style: preserve-3d;
+    transform: perspective(600px) rotateY(0deg);
+}
+
+figure .front,
+figure .backface {
+    transition: all ease .5s;
+}
+
+figure .front {
+    display: block;
+}
+
+figure .backface{
+    backface-visibility: hidden;
+    position: absolute;
+    top: 0;
+    padding: 20px;
+    color: #FFF;
+    transform: perspective(600px) rotateY(180deg);
+    overflow: auto;
+    border-radius: 4px;
+    height: 100%;
+    width: 100%;
+    /* background: rgba(233,97,138,1);
+    background: -moz-linear-gradient(-45deg, rgba(233,97,138,1) 0%, rgba(78,105,194,0.75) 100%);
+    background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(233,97,138,1)), color-stop(100%, rgba(78,105,194,0.75)));
+    background: -webkit-linear-gradient(-45deg, rgba(233,97,138,1) 0%, rgba(78,105,194,0.75) 100%);
+    background: -o-linear-gradient(-45deg, rgba(233,97,138,1) 0%, rgba(78,105,194,0.75) 100%);
+    background: -ms-linear-gradient(-45deg, rgba(233,97,138,1) 0%, rgba(78,105,194,0.75) 100%);
+    background: linear-gradient(135deg, rgba(233,97,138,1) 0%, rgba(78,105,194,0.75) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='rgba(233,97,138,1)', endColorstr='rgba(78,105,194,0.75)', GradientType=1 ); */
+}
+
+figure .backface .title{
+    font-size: 1.3rem;
+    font-family: "Poppins_Regular";
+}
+
+figure .backface p {
+    font-size: 1rem;
+}
+
+@media screen  and (max-width: 992px){
+    div.card_container:hover figure {
+        transform: perspective(600px) rotateY(0deg);
+    }
+
+    figure .backface {
+        backface-visibility: visible;
+        transform: perspective(600px) rotateY(0deg);
+    }
+
+    figure .backface .title {
+        font-size: 1.2rem;
+    }
+
+    figure .backface p {
+        font-size: 0.9rem;
+    }
+}
+
+

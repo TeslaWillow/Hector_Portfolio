@@ -1,0 +1,25 @@
+nav.navbar{
+    transition: all ease .3s;
+}
+
+.none-bg{
+    background: none !important;
+}
+
+.dark-bg{
+    background-color: #1C181B !important;
+}
+
+nav.navbar a {
+    color: white;
+}
+
+nav.navbar a:hover {
+    color: var(--folio-orange);
+}
+
+@media screen and ( max-width:  992px ){
+    nav.navbar{
+        background-color: #1C181B !important;
+    }
+}

@@ -1,0 +1,61 @@
+span {
+    color: var(--folio-orange);
+}
+
+i.icon {
+    font-size: 5.31rem;
+}
+
+.tecnology{
+    font-size: 1.5rem;
+}
+
+.profile{
+    position: absolute;
+    top: -100px;
+    left: calc(50% - 100px);
+    height: 200px;
+    width: 200px;
+}
+
+.btn-orange {
+    background-color: var(--folio-orange);
+    color: var(--white);
+}
+
+.profile img {
+    border-radius: 100%;
+    border: 5px solid rgba(255, 255, 255, .7);
+}
+
+@media screen  and (min-width: 992px){
+    .typewriter h1 {
+        font-size: 1.75rem;
+        overflow: hidden; /* Ensures the content is not revealed until the animation */
+        border-right: .15em solid var(--folio-orange); /* The typwriter cursor */
+        white-space: nowrap; /* Keeps the content on a single line */
+        margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+        letter-spacing: .1em; /* Adjust as needed */
+        animation: 
+        typing 3.5s steps(40, end),
+        blink-caret .75s step-end infinite;
+    }
+      
+    /* The typing effect */
+    @keyframes typing {
+        from { width: 0 }
+        to { width: 100% }
+    }
+    
+    /* The typewriter cursor effect */
+    @keyframes blink-caret {
+        from, to { border-color: transparent }
+        50% { border-color: var(--folio-orange); }
+    }
+}
+
+@media screen  and (max-width: 992px){
+    .tecnology{
+        font-size: 1.1rem;
+    }
+}
