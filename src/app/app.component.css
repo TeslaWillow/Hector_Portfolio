@@ -1,7 +1,7 @@
 header {
-    background-color: #1C181B;
-    background: url('../assets/img/fotis-fotopoulos-LJ9KY8pIH3E-unsplash.jpg');
+    background: url('assets/img/fotis-fotopoulos-LJ9KY8pIH3E-unsplash.jpg');
     background-size: cover;
+    background-color: #1C181B;
     background-repeat: no-repeat;
     background-position: bottom;
     background-attachment: fixed;
