@@ -14,7 +14,7 @@
     My name is Héctor Caballero, nice to meet you. 😀
 </h2>
 <!-- SKILLS -->
-<h3 class="mb-5" id="skills">
+<h3 class="my-5" id="skills">
     My Skills
 </h3>
 <div class="row d-flex justify-content-around">
@@ -119,24 +119,25 @@
 </div>
 <p class="text-break" style="font-size: 1.2rem;">Other skills: <strong>Typescript, Firebase, MongoDB, MySQL/MariaDB, Java, Oracle DB, Adobe Xd, WordPress, OWASP, JWT.</strong></p>
 <!-- PERSONAL PROYECTS -->
-<h3 class="mb-5" id="proyects">
+<h3 class="my-5" id="proyects">
     Some personal proyects
 </h3>
 <div class="row">
+    <div class="col-lg-12 col-xl-6">
+        <app-proyects [firstColor] = "'rgba(29,185,84,1)'"
+                      [secondColor] = "'rgba(25,20,20,0.75)'"
+                      [proyectName] = "'Spotify app like (Available)'"
+                      [proyectDesc] = "'Spotify clone, connected by an API with Angular, integrated with bootstrap and deployed in Heroku'"
+                      [proyectImg] = "'assets/img/sgcdesignco-NIo8Fd-RngE-unsplash.jpg'"
+                      [proyectURL] = "'https://hector-spoty-app.herokuapp.com/'"
+        ></app-proyects>
+    </div>
     <div class="col-lg-12 col-xl-6">
         <app-proyects [firstColor] = "'rgba(233,97,138,1)'"
                       [secondColor] = "'rgba(78,105,194,0.75)'"
                       [proyectName] = "'Movie database (In development)'"
                       [proyectDesc] = "'A movie database, connected by an API with Angular and integrated with bootstrap'"
                       [proyectImg] = "'assets/img/myke-simon-atsUqIm3wxo-unsplash.jpg'"
-        ></app-proyects>
-    </div>
-    <div class="col-lg-12 col-xl-6">
-        <app-proyects [firstColor] = "'rgba(29,185,84,1)'"
-                      [secondColor] = "'rgba(25,20,20,0.75)'"
-                      [proyectName] = "'Spotify app like (In development)'"
-                      [proyectDesc] = "'Spotify clone, connected by an API with Angular and integrated with bootstrap'"
-                      [proyectImg] = "'assets/img/sgcdesignco-NIo8Fd-RngE-unsplash.jpg'"
         ></app-proyects>
     </div>
     <div class="col-lg-12 col-xl-6">
@@ -157,7 +158,7 @@
     </div>
 </div>
 <!-- ABOUT ME -->
-<h3 class="mb-5" id="about">
+<h3 class="my-5" id="about">
     About me
 </h3>
 <div class="row">

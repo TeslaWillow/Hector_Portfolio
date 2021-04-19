@@ -1,18 +1,20 @@
 <div class="card_container m-2">
-    <figure>
-        <img class="img-fluid rounded front" [src]="proyectImg" alt="">
-        <figcaption class="backface"
-                    [ngStyle]="{
-                        'background-color': firstColor, 
-                        'background': 'linear-gradient(135deg, ' + firstColor + ' 0%, ' + secondColor + ' 100%)',
-                        'filter': 'progid:DXImageTransform.Microsoft.gradient( startColorstr=' + firstColor + ', endColorstr=' + secondColor + ', GradientType=1 )'
-                    }"
-        >
-            <h2 class="title">{{proyectName}}</h2>
-            <hr>
-            <p>
-                {{proyectDesc}}
-            </p>
-        </figcaption>
-    </figure>
+    <a [href]="proyectURL">
+        <figure>
+            <img class="img-fluid rounded front" [src]="proyectImg" alt="">
+            <figcaption class="backface"
+                        [ngStyle]="{
+                            'background-color': firstColor, 
+                            'background': 'linear-gradient(135deg, ' + firstColor + ' 0%, ' + secondColor + ' 100%)',
+                            'filter': 'progid:DXImageTransform.Microsoft.gradient( startColorstr=' + firstColor + ', endColorstr=' + secondColor + ', GradientType=1 )'
+                        }"
+            >
+                <h2 class="title">{{proyectName}}</h2>
+                <hr>
+                <p>
+                    {{proyectDesc}}
+                </p>
+            </figcaption>
+        </figure>
+    </a>
 </div>

@@ -12,6 +12,7 @@ export class ProyectsComponent implements OnInit {
   @Input("proyectName") proyectName:string = "Proyect";
   @Input("proyectDesc") proyectDesc:string = "Proyect desc";
   @Input("proyectImg")  proyectImg:string = "../../assets/img/vollume-control-RFb4vMzLsjQ-unsplash.jpg";
+  @Input("proyectURL")  proyectURL:string = "#proyects";
 
   constructor() {}
 
