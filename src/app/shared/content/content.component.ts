@@ -13,6 +13,7 @@ export class ContentComponent implements OnInit{
 
   constructor() { }
 
+
   ngOnInit(): void {
     this.progressBar("angular", "#B52E31", "fab fa-angular", 0.65);
     this.progressBar("node", "#6CC24A", "fab fa-node-js", 0.60);

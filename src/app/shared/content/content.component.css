@@ -6,6 +6,10 @@ i.icon {
     font-size: 5.31rem;
 }
 
+.row{
+    transition: all ease .5s;
+}
+
 .tecnology{
     font-size: 1.5rem;
 }
@@ -26,6 +30,13 @@ i.icon {
 .profile img {
     border-radius: 100%;
     border: 5px solid rgba(255, 255, 255, .7);
+}
+
+.carousel-item img{
+    background: white;
+}
+.carousel-item .carousel-caption{
+    background: #00000055 !important;
 }
 
 @media screen  and (min-width: 992px){
