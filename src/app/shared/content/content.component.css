@@ -6,6 +6,20 @@ i.icon {
     font-size: 5.31rem;
 }
 
+h3{
+    position: relative;
+}
+
+h3::before{
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    height: 5px;
+    width: 55px;
+    border-radius: 5px;
+    background-color: var(--folio-blue);
+}
+
 .row{
     transition: all ease .5s;
 }
