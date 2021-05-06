@@ -15,11 +15,11 @@ export class ContentComponent implements OnInit{
 
 
   ngOnInit(): void {
-    this.progressBar("angular", "#B52E31", "fab fa-angular", 0.65);
-    this.progressBar("node", "#6CC24A", "fab fa-node-js", 0.60);
-    this.progressBar("javascript", "#F7DF1E", "fab fa-js-square", 0.70);
+    this.progressBar("angular", "#B52E31", "fab fa-angular", 0.75);
+    this.progressBar("node", "#6CC24A", "fab fa-node-js", 0.70);
+    this.progressBar("javascript", "#F7DF1E", "fab fa-js-square", 0.80);
     this.progressBar("bootstrap", "#7952B3", "fab fa-bootstrap", 0.80);
-    this.progressBar("php", "#8892BE", "fab fa-php", 0.50);
+    this.progressBar("php", "#8892BE", "fab fa-php", 0.65);
     this.progressBar("html", "#E34F26", "fab fa-html5", 0.90);
     this.progressBar("sass", "#BF4080", "fab fa-sass", 0.80);
   }
